@@ -20,6 +20,9 @@ app.get('/', (req, res) => {
 app.get('/hellow', (req, res) => {
     res.send('Hellow form Heroku')
 })
+app.get('/hello', (req, res) => {
+    res.send('Hellow form Heroku')
+})
 
 client.connect(err => {
     const collection = client.db("test").collection("devices");
