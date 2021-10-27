@@ -17,7 +17,9 @@ app.get('/', (req, res) => {
     res.send("This is server for the car mechanicks.")
 })
 
-
+app.get('/hellow', (req, res) => {
+    res.send('Hellow form Heroku')
+})
 
 client.connect(err => {
     const collection = client.db("test").collection("devices");
